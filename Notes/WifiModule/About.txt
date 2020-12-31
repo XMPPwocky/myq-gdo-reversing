@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-30T03:59:08-08:00
+
+====== About ======
+Created Wednesday 30 December 2020
+
+Rename this page, it's just here to work around a Zim bug...
+
+Fn-Link 6220N-IS.
+
+Has at least two UARTs - one for debugging, one for communication. The [[DebugUART]] is exposed on a header, and allows arbitrary memory and flash read/write.
+
+Based around Realtek "Ameba-D" SoC.
+
+Some documents-
+
+* https://www.e-paper-display.com/99IOT/The%20user%20manual/Ameba-D-User-Manual-v06.pdf
+
+[ ] put the other ones in here too

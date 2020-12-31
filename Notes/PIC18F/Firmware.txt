@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-30T04:04:10-08:00
+
+====== Firmware ======
+Created Wednesday 30 December 2020
+
+Really really want to get at this, because I believe it has fun (likely proprietary?) rolling code algorithms for a large variety of garage door opener manufacturers/product lines.
+
+But device seems to be debug locked... firmware read as zeros with Raspberry Pi bitbang programmer.
+
+So, without doing goofy stuff with glitching/RDP bypass, need to think outside the box to dump it.

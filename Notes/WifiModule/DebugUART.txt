@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-30T03:54:33-08:00
+
+====== DebugUART ======
+Created Wednesday 30 December 2020
+
+On the WifiModule, main entry point so far.
+
+Initially showed up, deceptively, as an AT command shell. Some AT commands do let you edit RAM, but the really fun ones aren't AT commands at all.
+
+Known (useful) commands:
+
+* DW (address hex): read a little-endian uint32 from RAM;
+* EW (address hex) (value hex) to write the same
+* reboot: duh
+* flash read (address) (length) - careful, will crash if you miss an argument
+
+Indications that there are two CPUs (K0 and K4). Why? (Likely just that one's a power management controller or something like that.) ">>" command to switch the UART from talking to one to the other.
+
+Earlier, when causing boot to fail intentionally, the RTL chip would try and download firmware over the UART... very risky, avoid playing around with this.
+
+Tooling in in [[/debug_uart_tool/dehex.py]]

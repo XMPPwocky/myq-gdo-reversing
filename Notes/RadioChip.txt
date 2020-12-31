@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-30T03:51:00-08:00
+
+====== RadioChip ======
+Created Wednesday 30 December 2020
+
+[[SiLabs]] transceiver. Wideband (something like 200-800mhz? )
+
+[ ] fill this in from datasheet
+
+The device needs to actually talk to a garage door opener - despite its name it isn't really a smart garage door opener because it isn't a garage door opener at all. It's just a [[WiFi]] to RF (rolling code) bridge! This chip is doing that.
+
+There's two antennas - one white, one black. Are both connected to the radio chip? Maybe they're for different bands? 
+[ ] Investigate antenna situation.
+

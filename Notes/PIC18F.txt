@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-30T03:50:45-08:00
+
+====== PIC18F ======
+Created Wednesday 30 December 2020
+
+not actually sure what this does
+
+i believe it handles comms with the [[RadioChip]] and possibly LEDs/switches too?
+
+[[PicWifiComms]] are an open area of interest.

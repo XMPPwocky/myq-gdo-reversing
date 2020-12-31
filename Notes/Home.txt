@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-30T03:49:54-08:00
+
+====== Home ======
+Created Wednesday 30 December 2020
+
+smart garage door opener
+
+based on a [[PIC18F]] and an Fn-Link 6220N-IS [[WifiModule]] 
+
+
+
