@@ -267,6 +267,64 @@ Known (useful) commands:
 <br>
 
 <p>
+KM0 shell commands:
+</p>
+
+<pre>
+----------------- TEST COMMAND MODE HELP 12------------------
+	HELP (?) : 
+		 Print help messag
+
+	DW &lt;Address, Hex&gt;
+		 Dump memory dword or Read Hw dword register; 
+		 Can Dump only one dword at the same time 
+		 Unit: 4Bytes 
+
+	EW &lt;Address, Hex&gt;
+		 Write memory dword or Write Hw dword register 
+		 Can write only one dword at the same time 
+		 Ex: EW Address Value 
+
+	FLASH 
+		 erase chip 
+		 erase sector addr 
+		 erase block addr 
+		 read addr len 
+		 write addr data 
+
+	EFUSE 
+		 wmap addr len data
+		 rmap 
+
+	REBOOT 
+		 reboot 
+		 reboot uartburn 
+
+	TICKPS 
+		 r: release os wakelock 
+		 a: acquire os wakelock 
+
+	RTC 
+		 get
+
+	CTC 
+		 dump/etc
+
+	&gt;&gt; 
+		 switch shell to KM4 
+
+	HSSDM32K 
+		 enable hs sdm 32k
+
+	FWDBG : 
+		Normal FW dbg cmd 
+
+----------------- TEST COMMAND MODE END  c------------------
+</pre>
+
+<br>
+
+<p>
 Indications that there are two CPUs (K0 and K4). Why? (Likely just that one's a power management controller or something like that.) "&gt;&gt;" command to switch the UART from talking to one to the other.
 </p>
 
