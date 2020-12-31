@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-31T12:40:39-08:00
+
+====== Journal ======
+Created Thursday 31 December 2020
+
+====== Thu 31 Dec 2020 12:40:44 PM PST ======
+
+Read more documentation, poked at the flash more, disabled the MPU and tried reading ITCM (without success), but did find that some of the ITCM can be read as data! So that's weird.
+

@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>ROM</title>
+	<title>Journal</title>
 	<meta name="generator" content="Zim 0.72.0">
 	<meta name="viewport" content="width=device-width">
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'> -->
@@ -138,64 +138,37 @@
 <body>
 	<div class="wrapper">
 		<div id="navigation"> <ul>
-<li><a href="../../Backend.html" title="Backend" class="page">Backend</a></li>
-<li><a href="../../EEPROM.html" title="EEPROM" class="page">EEPROM</a></li>
-<li><a href="../../Home.html" title="Home" class="page">Home</a></li>
-<li><a href="../../Journal.html" title="Journal" class="page">Journal</a></li>
-<li><a href="../../PIC18F.html" title="PIC18F" class="page">PIC18F</a></li>
-<li><a href="../../PicWifiComms.html" title="PicWifiComms" class="page">PicWifiComms</a></li>
-<li><a href="../../RFChip.html" title="RFChip" class="page">RFChip</a></li>
-<li><a href="../../SiLabs.html" title="SiLabs" class="page">SiLabs</a></li>
-<li><a href="../../WiFi.html" title="WiFi" class="page">WiFi</a></li>
-<li><a href="../../WifiModule.html" title="WifiModule" class="page">WifiModule</a>
-<ul>
-<li><a href="../DebugUART.html" title="DebugUART" class="page">DebugUART</a></li>
-<li><a href="../Firmware.html" title="Firmware" class="page">Firmware</a></li>
-<li><a href="../FirmwareUpdate.html" title="FirmwareUpdate" class="page">FirmwareUpdate</a></li>
-<li><a href="../PICProgramming.html" title="PICProgramming" class="page">PICProgramming</a></li>
-<li><a href="../RTL8721D.html" title="RTL8721D" class="page">RTL8721D</a>
-<ul>
-<li><a href="./CoreSight.html" title="CoreSight" class="page">CoreSight</a></li>
-<li><a href="./KM0.html" title="KM0" class="page">KM0</a></li>
-<li><a href="./KM4.html" title="KM4" class="page">KM4</a></li>
-<li><b>ROM</b></li>
-<li><a href="./RSIP.html" title="RSIP" class="page">RSIP</a></li>
-</ul>
-</li>
-<li><a href="../SPIFlash.html" title="SPIFlash" class="page">SPIFlash</a></li>
-</ul></li>
+<li><a href="./Backend.html" title="Backend" class="page">Backend</a></li>
+<li><a href="./EEPROM.html" title="EEPROM" class="page">EEPROM</a></li>
+<li><a href="./Home.html" title="Home" class="page">Home</a></li>
+<li><b>Journal</b></li>
+<li><a href="./PIC18F.html" title="PIC18F" class="page">PIC18F</a></li>
+<li><a href="./PicWifiComms.html" title="PicWifiComms" class="page">PicWifiComms</a></li>
+<li><a href="./RFChip.html" title="RFChip" class="page">RFChip</a></li>
+<li><a href="./SiLabs.html" title="SiLabs" class="page">SiLabs</a></li>
+<li><a href="./WiFi.html" title="WiFi" class="page">WiFi</a></li>
+<li><a href="./WifiModule.html" title="WifiModule" class="page">WifiModule</a></li>
 </ul>
  </div>
 		<div id="content">
-			<h1>ROM <a name='WifiModule:RTL8721D:ROM'></a></h1>
+			<h1>Journal <a name='Journal'></a></h1>
 
 			<p>
 Created Thursday 31 December 2020
 </p>
 
-<p>
-Both ITCM and DTCM.
-</p>
+<h1>Thu 31 Dec 2020 12:40:44 PM PST</h1>
+
+<br>
 
 <p>
-<s>Obnoxiously, you can't dump the ITCM via the normal DebugUART DW/EW commands, because it's not readable as data</s>... maybe tricks with CoreSight? Hmmmm. You can dump some of it... what's up? Even disabling the MPU didn't seem to change anything. Very weird.
+Read more documentation, poked at the flash more, disabled the MPU and tried reading ITCM (without success), but did find that some of the ITCM can be read as data! So that's weird.
 </p>
 
-<p>
-TODO: look into <a href="./CoreSight.html" title="CoreSight" class="page">CoreSight</a>
-</p>
-
-<p>
-But the SDK (linked from <a href="../RTL8721D.html" title="RTL8721D" class="page">RTL8721D</a>) does have symbols for most of the ROM! This is very lucky since things like strcpy, memcpy, memcmp, etc. are all ROM routines, 
-</p>
 
 
 			<br>
 			<span class="backlinks">
-				<hr class='footnotes'>
-				<b>Backlinks:</b>
-				<a href='../Firmware.html'>WifiModule:Firmware</a>
-				<br /><br />
 			</span>
 
 			
