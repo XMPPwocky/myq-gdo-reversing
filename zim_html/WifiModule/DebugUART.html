@@ -177,8 +177,94 @@ Known (useful) commands:
 <li>EW (address hex) (value hex) to write the same</li>
 <li>reboot: duh</li>
 <li>flash read (address) (length) - careful, will crash if you miss an argument</li>
+<li>? - print SOME (not all!) commands</li>
 </ul>
 </p>
+
+<pre>
+?
+----------------- TEST COMMAND MODE HELP 19 [0e0f8b1c:0e0f8c4c]------------------
+	HELP (?) : 
+		 Print help messag
+
+	DW &lt;Address, Hex&gt;
+		 Dump memory dword or Read Hw dword register; 
+		 Can Dump only one dword at the same time 
+		 Unit: 4Bytes 
+
+	EW &lt;Address, Hex&gt;
+		 Write memory dword or Write Hw dword register 
+		 Can write only one dword at the same time 
+		 Ex: EW Address Value 
+
+	FLASH 
+		 erase chip 
+		 erase sector addr 
+		 erase block addr 
+		 read addr len 
+		 write addr data 
+
+	EFUSE 
+		 wmap addr len data
+		 rmap 
+		 &lt;wmap 0x00 2 8195&gt; efuse[0]=0x81, efuse [1]=0x98
+		 &lt;wmap 0xF0 4 11223344&gt; [0xF0]=0x11, [0xF1]=0x22, [0xF2]=0x33, [0xF3]=0x44
+
+	REBOOT 
+		 reboot 
+		 reboot uartburn 
+
+	TICKPS 
+		 r: release os wakelock 
+		 a: acquire os wakelock 
+
+	RTC 
+		 get
+
+	APTEST 
+		 get
+
+	TSFTEST 
+		 get
+
+	&gt;&gt; 
+		 switch shell to KM0 
+
+	LOGBUF 
+		 KM0 help to print KM4 log
+
+	BLE		BLE/Lockitron interface test support:
+		devget &lt;index&gt;		Get GUID for paired device (0-based index).
+		devrm &lt;index&gt;		Remove a paired device (0-based index).
+		devpurge		Remove all paired devices.
+		pair &lt;dev_type&gt; &lt;partial_MAC&gt;		Start pairing to a device.
+		rnonce &lt;dev_type&gt; &lt;partial_MAC&gt;		Read nonce from lock.
+		pta [&lt;index&gt;]		Get or set PTA config (index is 1..5).
+		get status		Get current status of BLE provisioning.
+		advertise start		Start BLE advertising.
+		advertise stop		Start BLE advertising
+
+	NVM
+		get		Print list of all NVM values.
+		get_ftl		Print raw FTL values.
+		test		DESTRUCTIVE test of set/get NVM values.
+
+	RTOS		FreeRTOS development support:
+		ps		Print list of FreeRTOS tasks.
+
+	TEST &lt;test_name&gt; [&lt;test_parameter&gt;]
+		?		Print list of supported test routines.
+
+	logprint &lt;enabled&gt;	0=disabled, 1=errors, 2=all
+
+	table &lt;id&gt;		d=devpres
+
+	rst &lt;id&gt;		m=mcu
+
+----------------- TEST COMMAND MODE END  19 [0e0f8b1c:0e0f8c4c]------------------
+</pre>
+
+<br>
 
 <p>
 Indications that there are two CPUs (K0 and K4). Why? (Likely just that one's a power management controller or something like that.) "&gt;&gt;" command to switch the UART from talking to one to the other.
