@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-31T12:30:43-08:00
+
+====== SPIFlash ======
+Created Thursday 31 December 2020
+
+SPI flash dump: [[/dumps/backup.bin]]
+
+Contains [[Firmware]] for the module... I don't see anything else in it.
+
+TODO: The SPI flash dump looks different than the dump (from the device itself) of flash (with [[DebugUART]] commands). Why? The dump from the [[DebugUART]] repeats itself. Is it just mapped multiple times / ignoring address bits, or is something weird going on with the [[RTL8721D:RSIPMMU]] ?

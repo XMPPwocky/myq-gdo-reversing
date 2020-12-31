@@ -5,3 +5,8 @@ Creation-Date: 2020-12-31T12:06:36-08:00
 ====== RSIPMMU ======
 Created Thursday 31 December 2020
 
+https://www.e-paper-display.cn/99IOT/Started%20guide/Ameba-D-Application-Note-v10_215535.pdf
+
+Remaps flash to allow for multi-slot safe OTA updating?
+
+Could also hide things in flash 

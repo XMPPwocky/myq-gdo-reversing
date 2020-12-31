@@ -5,6 +5,5 @@ Creation-Date: 2020-12-31T02:06:57-08:00
 ====== Firmware ======
 Created Thursday 31 December 2020
 
-SPI flash dump: [[/dumps/backup.bin]]
 
 Loaded "weird" dump for symbols for [[RTL8721D:ROM]] : [[/dumps/weirddump.bndb]]
