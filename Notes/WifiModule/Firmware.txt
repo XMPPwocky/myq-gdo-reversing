@@ -7,5 +7,4 @@ Created Thursday 31 December 2020
 
 SPI flash dump: [[/dumps/backup.bin]]
 
-Loaded "weird" dump: [[/dumps/weirddump.bndb]]
-There's a few ROM routines and data (ITCM/DTCM)
+Loaded "weird" dump for symbols for [[RTL8721D:ROM]] : [[/dumps/weirddump.bndb]]
