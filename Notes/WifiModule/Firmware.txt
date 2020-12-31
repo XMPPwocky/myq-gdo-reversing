@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-31T02:06:57-08:00
+
+====== Firmware ======
+Created Thursday 31 December 2020
+
+SPI flash dump: [[/dumps/backup.bin]]
+
+Loaded "weird" dump: [[/dumps/weirddump.bndb]]
+There's a few ROM routines and data (ITCM/DTCM)
