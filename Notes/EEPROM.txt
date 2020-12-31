@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-31T12:29:15-08:00
+
+====== EEPROM ======
+Created Thursday 31 December 2020
+
+{{/boardshots/shot-9.jpg}}
+I think this has my [[WiFi]] password on it (allegedly encrypted), so I'll hold off dumping it on stream for now...
