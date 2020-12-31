@@ -9,10 +9,3 @@ Fn-Link 6220N-IS, based on [[WifiModule:RTL8721D]]
 
 
 Has at least two UARTs - one for debugging, one for communication. The [[WifiModule:DebugUART]] is exposed on a header, and allows arbitrary memory and flash read/write.
-
-Based around Realtek "Ameba-D" SoC.
-
-Firmware dump: 
-Some documents-
-
-[ ] put the other ones in here too

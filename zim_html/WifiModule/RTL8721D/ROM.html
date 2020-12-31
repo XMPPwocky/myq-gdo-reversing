@@ -150,6 +150,7 @@
 <li><a href="../Firmware.html" title="Firmware" class="page">Firmware</a></li>
 <li><a href="../RTL8721D.html" title="RTL8721D" class="page">RTL8721D</a>
 <ul>
+<li><a href="./CoreSight.html" title="CoreSight" class="page">CoreSight</a></li>
 <li><b>ROM</b></li>
 <li><a href="./RSIPMMU.html" title="RSIPMMU" class="page">RSIPMMU</a></li>
 </ul></li>
@@ -164,11 +165,15 @@ Created Thursday 31 December 2020
 </p>
 
 <p>
-Both ITCM and DTCM. Obnoxiously, you can't dump the ITCM via the normal <a href="../DebugUART.html" title="DebugUART" class="page">DebugUART</a> DW/EW commands, because it's not readable as data... maybe tricks with CoreSight?
+Both ITCM and DTCM.
 </p>
 
 <p>
-TODO
+<s>Obnoxiously, you can't dump the ITCM via the normal DebugUART DW/EW commands, because it's not readable as data</s>... maybe tricks with CoreSight? Hmmmm. You can dump some of it... what's up? Even disabling the MPU didn't seem to change anything. Very weird.
+</p>
+
+<p>
+TODO: look into <a href="./CoreSight.html" title="CoreSight" class="page">CoreSight</a>
 </p>
 
 <p>

@@ -5,8 +5,10 @@ Creation-Date: 2020-12-31T12:06:40-08:00
 ====== ROM ======
 Created Thursday 31 December 2020
 
-Both ITCM and DTCM. Obnoxiously, you can't dump the ITCM via the normal [[DebugUART]] DW/EW commands, because it's not readable as data... maybe tricks with CoreSight?
+Both ITCM and DTCM.
 
-TODO
+~~Obnoxiously, you can't dump the ITCM via the normal DebugUART DW/EW commands, because it's not readable as data~~... maybe tricks with CoreSight? Hmmmm. You can dump some of it... what's up? Even disabling the MPU didn't seem to change anything. Very weird.
+
+TODO: look into [[CoreSight]]
 
 But the SDK (linked from [[RTL8721D]]) does have symbols for most of the ROM! This is very lucky since things like strcpy, memcpy, memcmp, etc. are all ROM routines, 
