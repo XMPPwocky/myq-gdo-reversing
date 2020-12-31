@@ -1,6 +1,18 @@
 import re, binascii, sys, struct
 import logging
 
+from pwn import *
+
+context.arch = "thumb"
+context.bits = 32
+context.endian = "little"
+
+def tubedbg(enabled):
+    if enabled: logging.getLogger("pwnlib.tubes").setLevel(logging.DEBUG)
+    else: logging.getLogger("pwnlib.tubes").setLevel(logging.INFO)
+
+tube = serialtube(port=sys.argv[1], baudrate=115200)
+
 
 FLASH_LINE_RE = re.compile(b"[0-9a-f]{8}: [0-9a-f]{8} [0-9a-f]{8}  [0-9a-f]{8} [0-9a-f]{8}")
 def parse_line(l):
@@ -20,11 +32,6 @@ def parse_line(l):
 MEM_LINE_RE = re.compile(b"[0-9A-F]{8}: [0-9A-F]{8}")
 
 
-from pwn import *
-
-#logging.getLogger("pwnlib.tubes").setLevel(logging.DEBUG)
-
-tube = serialtube(port="/dev/ttyUSB0", baudrate=115200)
 
 CHUNK_SIZE = 0x100
 def dump_flash_chunk(addr):
@@ -136,3 +143,24 @@ def write_mem_dw(addr, dw):
     expected = "{:08X}: ".format(addr)
     print(expected)
     tube.recvuntil(expected, timeout=1)
+
+def write_mem_bytes(addr, data):
+    assert len(data) % 4 == 0
+
+    tube.clean()
+
+    for i in range(0, len(data), 4):
+        dw = struct.unpack("<I", data[i:i+4])[0]
+        cmd = "EW {:0x} {:0x}\r\n".format(addr + i, dw)
+        tube.send(cmd)
+
+    expected = "{:08X}: ".format(addr + i)
+    print(expected)
+    tube.recvuntil(expected, timeout=1)
+
+def hd(s, *args, **kwargs):
+    print(hexdump(s, *args, **kwargs))
+
+def hexmem(addr, length=32):
+    res = read_mem_bytes(addr, length)
+    hd(res, begin=addr)
