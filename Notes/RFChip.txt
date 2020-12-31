@@ -5,10 +5,11 @@ Creation-Date: 2020-12-30T03:51:00-08:00
 ====== RFChip ======
 Created Wednesday 30 December 2020
 
-[[SiLabs]] transceiver. Wideband (something like 200-800mhz? )
+[[SiLabs]] Si4432 transceiver IC. Wideband (240-930MHz).
 
-[ ] fill this in from datasheet
+Interface is allegedly 3-wire SPI.
 
+No obvious references to this chip in [[WifiModule:Firmware]] . Which means it must be in [[PIC18F:Firmware]] - makes sense, and is probably a decent part of the reason the PIC exists.
 {{./pasted_image.png}}
 
 The device needs to actually talk to a garage door opener - despite its name it isn't really a smart garage door opener because it isn't a garage door opener at all. It's just an IP (wifi) to RF (rolling code) bridge! This chip is doing that.

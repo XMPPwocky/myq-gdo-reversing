@@ -16,5 +16,6 @@ Firmware dump:
 Some documents-
 
 * https://www.e-paper-display.com/99IOT/The%20user%20manual/Ameba-D-User-Manual-v06.pdf
+* https://www.e-paper-display.cn/99IOT/Started%20guide/Ameba-D-Application-Note-v10_215535.pdf
 
 [ ] put the other ones in here too
