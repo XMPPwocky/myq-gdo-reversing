@@ -7,6 +7,6 @@ Created Wednesday 30 December 2020
 
 not actually sure what this does
 
-i believe it handles comms with the [[RadioChip]] and possibly LEDs/switches too?
+i believe it handles comms with the [[RFChip]] and possibly LEDs/switches too?
 
 [[PicWifiComms]] are an open area of interest.

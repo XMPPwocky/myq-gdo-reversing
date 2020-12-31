@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2020-12-30T03:51:00-08:00
 
-====== RadioChip ======
+====== RFChip ======
 Created Wednesday 30 December 2020
 
 [[SiLabs]] transceiver. Wideband (something like 200-800mhz? )

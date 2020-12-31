@@ -9,5 +9,6 @@ What's even going on here? How does the [[PIC18F]] talk to the [[WiFiModule]]
 
 [ ] Investigate communications between the PIC and the [[WiFiModule]]
 
-observed in [[../WifiModule/DebugUART.txt|WiFiModule:DebugUART]]
+observed in [[WifiModule:DebugUART]] :
+
 ''[mc_msg] RC2: Pic to Cloud: guid=84-68125AA0 mid=0081 pl=2600''
