@@ -5,9 +5,13 @@ Creation-Date: 2020-12-30T03:50:45-08:00
 ====== PIC18F ======
 Created Wednesday 30 December 2020
 
-not actually sure what this does
+PIC18F67J11
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/39778e.pdf
+
+not actually sure what this does.
 
 i believe it handles comms with the [[RFChip]] and possibly LEDs/switches too?
+
 
 [[PicWifiComms]] are an open area of interest.
 

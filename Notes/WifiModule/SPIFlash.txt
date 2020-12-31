@@ -9,4 +9,6 @@ SPI flash dump: [[/dumps/backup.bin]]
 
 Contains [[Firmware]] for the module... I don't see anything else in it.
 
-TODO: The SPI flash dump looks different than the dump (from the device itself) of flash (with [[DebugUART]] commands). Why? The dump from the [[DebugUART]] repeats itself. Is it just mapped multiple times / ignoring address bits, or is something weird going on with the [[RTL8721D:RSIPMMU]] ?
+The RTL8721D has something called an RSIP: [[RTL8721D:RSIP]] . Seems to handle both optional flash encryption (seems to not be used here, yay) and has an MMU...
+
+TODO: The SPI flash dump looks different than the dump (from the device itself) of flash (with [[DebugUART]] commands). Why? The dump from the [[DebugUART]] repeats itself. Is it just mapped multiple times / ignoring address bits, or is something weird going on with the [[RTL8721D:RSIP]] MMU? Or maybe my tool (to dump from the [[DebugUART]]) is still bugged somehow.

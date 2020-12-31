@@ -150,6 +150,8 @@
 <ul>
 <li><a href="./DebugUART.html" title="DebugUART" class="page">DebugUART</a></li>
 <li><a href="./Firmware.html" title="Firmware" class="page">Firmware</a></li>
+<li><a href="./FirmwareUpdate.html" title="FirmwareUpdate" class="page">FirmwareUpdate</a></li>
+<li><a href="./PICProgramming.html" title="PICProgramming" class="page">PICProgramming</a></li>
 <li><a href="./RTL8721D.html" title="RTL8721D" class="page">RTL8721D</a></li>
 <li><b>SPIFlash</b></li>
 </ul></li>
@@ -171,7 +173,11 @@ Contains <a href="./Firmware.html" title="Firmware" class="page">Firmware</a> fo
 </p>
 
 <p>
-TODO: The SPI flash dump looks different than the dump (from the device itself) of flash (with <a href="./DebugUART.html" title="DebugUART" class="page">DebugUART</a> commands). Why? The dump from the <a href="./DebugUART.html" title="DebugUART" class="page">DebugUART</a> repeats itself. Is it just mapped multiple times / ignoring address bits, or is something weird going on with the <a href="./RTL8721D/RSIPMMU.html" title="RTL8721D:RSIPMMU" class="page">RTL8721D:RSIPMMU</a> ?
+The RTL8721D has something called an RSIP: <a href="./RTL8721D/RSIP.html" title="RTL8721D:RSIP" class="page">RTL8721D:RSIP</a> . Seems to handle both optional flash encryption (seems to not be used here, yay) and has an MMU...
+</p>
+
+<p>
+TODO: The SPI flash dump looks different than the dump (from the device itself) of flash (with <a href="./DebugUART.html" title="DebugUART" class="page">DebugUART</a> commands). Why? The dump from the <a href="./DebugUART.html" title="DebugUART" class="page">DebugUART</a> repeats itself. Is it just mapped multiple times / ignoring address bits, or is something weird going on with the <a href="./RTL8721D/RSIP.html" title="RTL8721D:RSIP" class="page">RTL8721D:RSIP</a> MMU? Or maybe my tool (to dump from the <a href="./DebugUART.html" title="DebugUART" class="page">DebugUART</a>) is still bugged somehow.
 </p>
 
 

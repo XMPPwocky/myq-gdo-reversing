@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-12-31T12:37:34-08:00
+
+====== FirmwareUpdate ======
+Created Thursday 31 December 2020
+
+Seems to be sent over MQTT (looks like a push, not a pull, unfortunately... maybe I could just wait 

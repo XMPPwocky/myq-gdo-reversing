@@ -2,10 +2,10 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2020-12-31T12:06:36-08:00
 
-====== RSIPMMU ======
+====== RSIP ======
 Created Thursday 31 December 2020
 
-https://www.e-paper-display.cn/99IOT/Started%20guide/Ameba-D-Application-Note-v10_215535.pdf
+https://www.e-paper-display.cn/99IOT/Started guide/Ameba-D-Application-Note-v10_215535.pdf
 
 Remaps flash to allow for multi-slot safe OTA updating?
 

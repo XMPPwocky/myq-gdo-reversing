@@ -10,3 +10,6 @@ Really really want to get at this, because I believe it has fun (likely propriet
 But device seems to be debug locked... firmware read as zeros with Raspberry Pi bitbang programmer.
 
 So, without doing goofy stuff with glitching/RDP bypass, need to think outside the box to dump it.
+
+
+64K of flash- too much to fit on the 16K [[EEPROM]] (was hoping the [[WifiModule:PICProgramming]] stuff maybe saved a firmware image to the EEPROM (because it mentions "NVM" which is also used to describe some of the EEPROM stuff, IIRC)
