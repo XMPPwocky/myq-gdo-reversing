@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Index of MyQ Reversing</title>
+	<title>ROM</title>
 	<meta name="generator" content="Zim 0.72.0">
 	<meta name="viewport" content="width=device-width">
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'> -->
@@ -138,44 +138,42 @@
 <body>
 	<div class="wrapper">
 		<div id="navigation"> <ul>
-<li><a href="./Backend.html" title="Backend" class="page">Backend</a></li>
-<li><a href="./Home.html" title="Home" class="page">Home</a></li>
-<li><a href="./PIC18F.html" title="PIC18F" class="page">PIC18F</a></li>
-<li><a href="./PicWifiComms.html" title="PicWifiComms" class="page">PicWifiComms</a></li>
-<li><a href="./RFChip.html" title="RFChip" class="page">RFChip</a></li>
-<li><a href="./SiLabs.html" title="SiLabs" class="page">SiLabs</a></li>
-<li><a href="./WifiModule.html" title="WifiModule" class="page">WifiModule</a></li>
+<li><a href="../../Backend.html" title="Backend" class="page">Backend</a></li>
+<li><a href="../../Home.html" title="Home" class="page">Home</a></li>
+<li><a href="../../PIC18F.html" title="PIC18F" class="page">PIC18F</a></li>
+<li><a href="../../PicWifiComms.html" title="PicWifiComms" class="page">PicWifiComms</a></li>
+<li><a href="../../RFChip.html" title="RFChip" class="page">RFChip</a></li>
+<li><a href="../../SiLabs.html" title="SiLabs" class="page">SiLabs</a></li>
+<li><a href="../../WifiModule.html" title="WifiModule" class="page">WifiModule</a>
+<ul>
+<li><a href="../DebugUART.html" title="DebugUART" class="page">DebugUART</a></li>
+<li><a href="../Firmware.html" title="Firmware" class="page">Firmware</a></li>
+<li><a href="../RTL8721D.html" title="RTL8721D" class="page">RTL8721D</a>
+<ul>
+<li><b>ROM</b></li>
+<li><a href="./RSIPMMU.html" title="RSIPMMU" class="page">RSIPMMU</a></li>
+</ul></li>
+</ul></li>
 </ul>
  </div>
 		<div id="content">
-			<h1>Index of MyQ Reversing <a name='index'></a></h1>
+			<h1>ROM <a name='WifiModule:RTL8721D:ROM'></a></h1>
 
-			<ul>
-<li><a href="./Backend.html" title="Backend" class="page">Backend</a>
-<ul>
-<li><a href="./Backend/MQTT_Server.html" title="MQTT Server" class="page">MQTT Server</a></li>
-</ul>
-</li>
-<li><a href="./Home.html" title="Home" class="page">Home</a></li>
-<li><a href="./PIC18F.html" title="PIC18F" class="page">PIC18F</a>
-<ul>
-<li><a href="./PIC18F/Firmware.html" title="Firmware" class="page">Firmware</a></li>
-</ul>
-</li>
-<li><a href="./PicWifiComms.html" title="PicWifiComms" class="page">PicWifiComms</a></li>
-<li><a href="./RFChip.html" title="RFChip" class="page">RFChip</a></li>
-<li><a href="./SiLabs.html" title="SiLabs" class="page">SiLabs</a></li>
-<li><a href="./WifiModule.html" title="WifiModule" class="page">WifiModule</a>
-<ul>
-<li><a href="./WifiModule/DebugUART.html" title="DebugUART" class="page">DebugUART</a></li>
-<li><a href="./WifiModule/Firmware.html" title="Firmware" class="page">Firmware</a></li>
-<li><a href="./WifiModule/RTL8721D.html" title="RTL8721D" class="page">RTL8721D</a>
-<ul>
-<li><a href="./WifiModule/RTL8721D/ROM.html" title="ROM" class="page">ROM</a></li>
-<li><a href="./WifiModule/RTL8721D/RSIPMMU.html" title="RSIPMMU" class="page">RSIPMMU</a></li>
-</ul></li>
-</ul></li>
-</ul>
+			<p>
+Created Thursday 31 December 2020
+</p>
+
+<p>
+Both ITCM and DTCM. Obnoxiously, you can't dump the ITCM via the normal <a href="../DebugUART.html" title="DebugUART" class="page">DebugUART</a> DW/EW commands, because it's not readable as data... maybe tricks with CoreSight?
+</p>
+
+<p>
+TODO
+</p>
+
+<p>
+But the SDK (linked from <a href="../RTL8721D.html" title="RTL8721D" class="page">RTL8721D</a>) does have symbols for most of the ROM! This is very lucky since things like strcpy, memcpy, memcmp, etc. are all ROM routines, 
+</p>
 
 
 			<br>
