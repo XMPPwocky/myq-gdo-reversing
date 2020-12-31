@@ -10,3 +10,5 @@ not actually sure what this does
 i believe it handles comms with the [[RFChip]] and possibly LEDs/switches too?
 
 [[PicWifiComms]] are an open area of interest.
+
+{{./pasted_image.png}}
