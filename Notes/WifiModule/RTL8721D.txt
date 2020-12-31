@@ -5,3 +5,7 @@ Creation-Date: 2020-12-30T17:58:27-08:00
 ====== RTL8721D ======
 Created Wednesday 30 December 2020
 
+Docs:
+
+* https://www.e-paper-display.com/99IOT/The%20user%20manual/Ameba-D-User-Manual-v06.pdf
+* https://www.e-paper-display.cn/99IOT/Started%20guide/Ameba-D-Application-Note-v10_215535.pdf

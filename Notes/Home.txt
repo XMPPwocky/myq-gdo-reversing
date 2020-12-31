@@ -7,6 +7,8 @@ Created Wednesday 30 December 2020
 
 smart garage door opener
 
+If you're viewing this on GitHub Pages, know that there's a decent amount of caching going on, and that control-clicking the refresh button (to flush your browser's cache for that page) may be useful!
+
 based on a [[PIC18F]] and an Fn-Link 6220N-IS [[WifiModule]] 
 
 
