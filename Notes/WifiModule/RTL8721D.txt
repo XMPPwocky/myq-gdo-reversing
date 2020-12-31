@@ -9,3 +9,5 @@ Docs:
 
 * https://www.e-paper-display.com/99IOT/The%20user%20manual/Ameba-D-User-Manual-v06.pdf
 * https://www.e-paper-display.cn/99IOT/Started%20guide/Ameba-D-Application-Note-v10_215535.pdf
+
+SDK (!!!): https://code.aliyun.com/PR_wangchao/cainiao_lemo/tree/767c9cac687e3d6df7c7ac4321b0cc9ae848db86
