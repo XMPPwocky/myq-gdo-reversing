@@ -7,5 +7,11 @@ Created Thursday 31 December 2020
 
 ====== Thu 31 Dec 2020 12:40:44 PM PST ======
 
-Read more documentation, poked at the flash more, disabled the MPU and tried reading ITCM (without success), but did find that some of the ITCM can be read as data! So that's weird.
+Improved the tool to talk to the [[WifiModule:DebugUART]] 
+
+Read more documentation about [[WifiModule:RTL8721D:CoreSight]] . Not quite as useful as I thought it might be for dumping the [[WifiModule:RTL8721D:ROM]] , but the Flash Patch Breakpoint is definitely worth using.
+
+poked at the [[WifiModule:SPIFlash]] some more, disabled the [[RTL8721D]]'s MPU and tried reading the ITCM [[WifiModule:RTL8721D:ROM]] (without success), but did find that some of the ITCM can be read as data! So that's weird.
+
+TODO: Investigate that further (but not too urgent, because I have symbols for the [[WifiModule:RTL8721D:ROM]] )
 

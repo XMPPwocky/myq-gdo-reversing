@@ -145,6 +145,7 @@
 <li><a href="./PIC18F.html" title="PIC18F" class="page">PIC18F</a></li>
 <li><a href="./PicWifiComms.html" title="PicWifiComms" class="page">PicWifiComms</a></li>
 <li><a href="./RFChip.html" title="RFChip" class="page">RFChip</a></li>
+<li><a href="./RTL8721D.html" title="RTL8721D" class="page">RTL8721D</a></li>
 <li><a href="./SiLabs.html" title="SiLabs" class="page">SiLabs</a></li>
 <li><a href="./WiFi.html" title="WiFi" class="page">WiFi</a></li>
 <li><a href="./WifiModule.html" title="WifiModule" class="page">WifiModule</a></li>
@@ -162,7 +163,19 @@ Created Thursday 31 December 2020
 <br>
 
 <p>
-Read more documentation, poked at the flash more, disabled the MPU and tried reading ITCM (without success), but did find that some of the ITCM can be read as data! So that's weird.
+Improved the tool to talk to the <a href="./WifiModule/DebugUART.html" title="WifiModule:DebugUART" class="page">WifiModule:DebugUART</a> 
+</p>
+
+<p>
+Read more documentation about <a href="./WifiModule/RTL8721D/CoreSight.html" title="WifiModule:RTL8721D:CoreSight" class="page">WifiModule:RTL8721D:CoreSight</a> . Not quite as useful as I thought it might be for dumping the <a href="./WifiModule/RTL8721D/ROM.html" title="WifiModule:RTL8721D:ROM" class="page">WifiModule:RTL8721D:ROM</a> , but the Flash Patch Breakpoint is definitely worth using.
+</p>
+
+<p>
+poked at the <a href="./WifiModule/SPIFlash.html" title="WifiModule:SPIFlash" class="page">WifiModule:SPIFlash</a> some more, disabled the <a href="./RTL8721D.html" title="RTL8721D" class="page">RTL8721D</a>'s MPU and tried reading the ITCM <a href="./WifiModule/RTL8721D/ROM.html" title="WifiModule:RTL8721D:ROM" class="page">WifiModule:RTL8721D:ROM</a> (without success), but did find that some of the ITCM can be read as data! So that's weird.
+</p>
+
+<p>
+TODO: Investigate that further (but not too urgent, because I have symbols for the <a href="./WifiModule/RTL8721D/ROM.html" title="WifiModule:RTL8721D:ROM" class="page">WifiModule:RTL8721D:ROM</a> )
 </p>
 
 
