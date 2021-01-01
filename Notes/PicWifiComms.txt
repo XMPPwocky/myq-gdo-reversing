@@ -13,9 +13,12 @@ observed in [[WifiModule:DebugUART]] :
 
 ''[mc_msg] RC2: Pic to Cloud: guid=84-68125AA0 mid=0081 pl=2600''
 
-I saw communications on some test pads on the bottom of the board that looked like "<foobar>". Looking at the "Saturn" parsing code in [[WifiModule:Firmware]] , that's parsing similar stuff. I'll check those test pads out more - This is the UART there referenced by the "Saturn" code, registers base 0x40008000
+I saw communications on some test pads on the bottom of the board that looked like "<foobar>". Looking at the "Saturn" parsing code in [[WifiModule:Firmware]] e.g. saturn_uart_proc_thread, that's parsing similar stuff. I'll check those test pads out more - This is the UART there referenced by the "Saturn" code, registers base 0x40008000
+
 
 Observed messages (direction 1):
+
+Noting "P0", then "P1", "P5", "P6" - are we monotonically increasing through a state machine?
 
 ''<P0011102111002000000000000000000000000000000000000078>''
 ''<P00111021110020000F008468125A90000E''
@@ -47,3 +50,7 @@ Direction 2:
 ''<P6010102010203013E>''
 ''<P6010102010203013E>''
 ''<K3>''
+
+
+
+"K" messages are 4-byte, constant-length, with a single digit payload (<= 7)

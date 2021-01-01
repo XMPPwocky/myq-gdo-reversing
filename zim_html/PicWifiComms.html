@@ -179,11 +179,17 @@ observed in <a href="./WifiModule/DebugUART.html" title="WifiModule:DebugUART" c
 </p>
 
 <p>
-I saw communications on some test pads on the bottom of the board that looked like "&lt;foobar&gt;". Looking at the "Saturn" parsing code in <a href="./WifiModule/Firmware.html" title="WifiModule:Firmware" class="page">WifiModule:Firmware</a> , that's parsing similar stuff. I'll check those test pads out more - This is the UART there referenced by the "Saturn" code, registers base 0x40008000
+I saw communications on some test pads on the bottom of the board that looked like "&lt;foobar&gt;". Looking at the "Saturn" parsing code in <a href="./WifiModule/Firmware.html" title="WifiModule:Firmware" class="page">WifiModule:Firmware</a> e.g. saturn_uart_proc_thread, that's parsing similar stuff. I'll check those test pads out more - This is the UART there referenced by the "Saturn" code, registers base 0x40008000
 </p>
+
+<br>
 
 <p>
 Observed messages (direction 1):
+</p>
+
+<p>
+Noting "P0", then "P1", "P5", "P6" - are we monotonically increasing through a state machine?
 </p>
 
 <p>
@@ -223,12 +229,21 @@ Direction 2:
 <tt>&lt;K3&gt;</tt>
 </p>
 
+<br>
+<br>
+
+<p>
+"K" messages are 4-byte, constant-length, with a single digit payload (&lt;= 7)
+</p>
+
 
 			<br>
 			<span class="backlinks">
 				<hr class='footnotes'>
 				<b>Backlinks:</b>
 				<a href='./PIC18F.html'>PIC18F</a>
+				
+				<a href='./Codenames.html'>Codenames</a>
 				<br /><br />
 			</span>
 

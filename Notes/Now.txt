@@ -113,3 +113,13 @@ Checking if the UART code I see on the WiFi module is the same one I see on test
 Confirmed UART on test points is the one the "Saturn" code writes to
 
 //Friday 01 January 2021//
+
+--------------------
+Forgetting to change scenes in OBS
+
+//Friday 01 January 2021//
+
+--------------------
+Looking at "Saturn" message parsing
+
+//Friday 01 January 2021//

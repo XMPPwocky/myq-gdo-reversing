@@ -6,5 +6,5 @@ Creation-Date: 2021-01-01T00:59:38-08:00
 Created Friday 01 January 2021
 
 "Monte Carlo": ???
-"Saturn": ???
+"Saturn": [[PIC18F]] perhaps? Involved in [[PicWifiComms]] 
 "Ameba-D": [[WifiModule:RTL8721D]] 
