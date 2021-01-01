@@ -38,3 +38,18 @@ Testing now.sh
 Testing now.sh, part 2
 
 //Thursday 31 December 2020//
+
+--------------------
+Setting up :)
+
+//Friday 01 January 2021//
+
+--------------------
+REing PIC-WiFi module communications
+
+//Friday 01 January 2021//
+
+--------------------
+REing PIC-WiFi module comms. UART? What reads/writes to/from it?
+
+//Friday 01 January 2021//
