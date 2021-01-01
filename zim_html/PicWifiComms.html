@@ -139,6 +139,7 @@
 	<div class="wrapper">
 		<div id="navigation"> <ul>
 <li><a href="./Backend.html" title="Backend" class="page">Backend</a></li>
+<li><a href="./Codenames.html" title="Codenames" class="page">Codenames</a></li>
 <li><a href="./EEPROM.html" title="EEPROM" class="page">EEPROM</a></li>
 <li><a href="./Home.html" title="Home" class="page">Home</a></li>
 <li><a href="./Journal.html" title="Journal" class="page">Journal</a></li>
@@ -175,6 +176,51 @@ observed in <a href="./WifiModule/DebugUART.html" title="WifiModule:DebugUART" c
 
 <p>
 <tt>[mc_msg] RC2: Pic to Cloud: guid=84-68125AA0 mid=0081 pl=2600</tt>
+</p>
+
+<p>
+I saw communications on some test pads on the bottom of the board that looked like "&lt;foobar&gt;". Looking at the "Saturn" parsing code in <a href="./WifiModule/Firmware.html" title="WifiModule:Firmware" class="page">WifiModule:Firmware</a> , that's parsing similar stuff. I'll check those test pads out more.*
+</p>
+
+<p>
+Observed messages (direction 1):
+</p>
+
+<p>
+<tt>&lt;P0011102111002000000000000000000000000000000000000078&gt;</tt><br>
+<tt>&lt;P00111021110020000F008468125A90000E</tt><br>
+<tt>&lt;K0&gt;</tt><br>
+<tt>&lt;P1</tt><br>
+<tt>&lt;P1011102110F00102110F008468125AA0000E50000981096000C310203013E&gt;</tt><br>
+<tt>&lt;P5010102010101DB&gt;</tt><br>
+<tt>&lt;P50101020113E&gt;</tt><br>
+<tt>&lt;P6010102010203013E&gt;</tt><br>
+<tt>&lt;P60101020102030000000000000000C2&gt;</tt><br>
+<tt>&lt;K4&gt;</tt><br>
+<tt>&lt;P00117021710208170217020A00E4&gt;</tt><br>
+<tt>&lt;K6&gt;</tt><br>
+<tt>&lt;P2011702170116D7&gt;</tt>
+</p>
+
+<p>
+Direction 2:
+</p>
+
+<p>
+<tt>&lt;P001110211100200000000000000000000000000000078&gt;</tt><br>
+<tt>&lt;P001110211100200000000000000000000000000000078&gt;</tt><br>
+<tt>&lt;P001110211100200000000000000000000000000000078&gt;</tt><br>
+<tt>&lt;P1011102110F008468125A90000E</tt><br>
+<tt>&lt;K0&gt;&lt;P1&lt;P1011102110F008468125A90000E50002681096000C3&gt;</tt><br>
+<tt>&lt;K1&gt;&lt;P2011102110F008468125AA0000E50000981096000C3&gt;</tt><br>
+<tt>&lt;K2&gt;&lt;P301100210050701070111D2&gt;</tt><br>
+<tt>&lt;P4010102010203013E&gt;&lt;P5010102010101DB&gt;</tt><br>
+<tt>&lt;P5010102010101DB&gt;</tt><br>
+<tt>&lt;P5010102010101DB&gt;</tt><br>
+<tt>&lt;P6010102010203013E&gt;</tt><br>
+<tt>&lt;P6010102010203013E&gt;</tt><br>
+<tt>&lt;P6010102010203013E&gt;</tt><br>
+<tt>&lt;K3&gt;</tt>
 </p>
 
 
