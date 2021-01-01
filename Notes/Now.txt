@@ -78,3 +78,38 @@ Investigating "Saturn" - is this the PIC18F?
 Examining a UART on test pads that seems to be involved in comms between PIC and WiFi module
 
 //Friday 01 January 2021//
+
+--------------------
+Reverse-engineering the protocol ("Saturn"?) between the PIC and WiFi module
+
+//Friday 01 January 2021//
+
+--------------------
+Using the memory-editing tool I already have, forcibly print to one of the UARTs on the RTL8721
+
+//Friday 01 January 2021//
+
+--------------------
+Hooking debug UART connection back up
+
+//Friday 01 January 2021//
+
+--------------------
+Uh-oh, I only have one ground pin exposed, let me make a Y cable real quick
+
+//Friday 01 January 2021//
+
+--------------------
+Hooking debug UART back up
+
+//Friday 01 January 2021//
+
+--------------------
+Checking if the UART code I see on the WiFi module is the same one I see on test points
+
+//Friday 01 January 2021//
+
+--------------------
+Confirmed UART on test points is the one the "Saturn" code writes to
+
+//Friday 01 January 2021//

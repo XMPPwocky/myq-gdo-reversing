@@ -13,7 +13,7 @@ observed in [[WifiModule:DebugUART]] :
 
 ''[mc_msg] RC2: Pic to Cloud: guid=84-68125AA0 mid=0081 pl=2600''
 
-I saw communications on some test pads on the bottom of the board that looked like "<foobar>". Looking at the "Saturn" parsing code in [[WifiModule:Firmware]] , that's parsing similar stuff. I'll check those test pads out more.*
+I saw communications on some test pads on the bottom of the board that looked like "<foobar>". Looking at the "Saturn" parsing code in [[WifiModule:Firmware]] , that's parsing similar stuff. I'll check those test pads out more - This is the UART there referenced by the "Saturn" code, registers base 0x40008000
 
 Observed messages (direction 1):
 
