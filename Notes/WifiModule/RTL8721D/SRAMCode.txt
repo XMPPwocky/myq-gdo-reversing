@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2021-01-01T02:21:24-08:00
+
+====== SRAMCode ======
+Created Friday 01 January 2021
+
+Some code is loaded in SRAM (0x10000000-0x1007ffff) - could either find what's loading it (though that might be the [[ROM]]) or just dump it out (slowly...) over the [[WifiModule:DebugUART]] .
+
+TODO: Dump SRAM code.
+
